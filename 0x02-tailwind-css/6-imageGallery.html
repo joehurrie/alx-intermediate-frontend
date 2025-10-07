@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 mt-4 min-h-screen">
+        <section class="flex lg:col-span-2 mr-2">
+            <div class="bg-red-200 lg:w-1/2 p-4">Flexbox Item 1</div>
+            <div class="bg-red-400 lg:w-1/2 p-4">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+   <section class="grid grid-cols-1 lg:grid-cols-3 min-h-screen mt-10 gap-5">
+      <div>
+         <img src="../Assets/beach-landscape-twilight-sunset-scenery-illustration-macos-3840x2160-3797.jpg" alt="">
+      </div>
+      <div><img src="../Assets/coastline-mountain-pass-road-twilight-sunset-scenery-3840x2160-3798.jpg" alt=""></div>
+      <div>
+         <img src="../Assets/delta-force-soldier-3840x2160-21421.jpg" alt="">
+      </div>
+      <div><img src="../Assets/The Last Of Us Season 2.png" alt=""></div>
+      <div><img src="../Assets/TLOU Season 2 - HBO.png" alt=""></div>
+      <div><img src="../Assets/warface-clutch-3840x2160-21986.jpg" alt=""></div>
+   </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>

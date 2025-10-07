@@ -1,1 +1,2 @@
-To install sass,on windows run npm install sass -v 3.7.4
+Since i'm using windows and node i used the command line npm install -D sass to install all the SASS packages provided by node. 
+Then I used this npx sass src/style.scss dist/style.css command line to build up a style.css from my SASS file.
